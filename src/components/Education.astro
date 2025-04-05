@@ -1,0 +1,15 @@
+---
+import '../styles/education.css';
+import { education } from '../json resume/json resume.json';
+
+const { institution, url, area, startDate, endDate } = education[0];
+---
+
+<article class="prose">
+    <h2>EDUCACION</h2>
+    <p>{institution}</p>
+    <p>{area}</p>
+    <p>{startDate}</p>
+    <p>{endDate}</p>
+    <p>{url}</p>
+</article>

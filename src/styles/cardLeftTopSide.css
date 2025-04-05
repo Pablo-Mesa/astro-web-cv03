@@ -1,0 +1,85 @@
+.card-left-top {
+    display: flex;
+    flex-direction: column;    
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 300px;    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.profile-picture {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 12px;
+    border: 2px solid #007acc;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.profile-tagline {
+    font-size: 14px;
+    color: #555;
+    margin: 4px 0 0;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 16px 0;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.info-text {
+    font-size: 14px;
+    color: #333;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+
+    .card-left-top{
+        max-width: 100%;
+        width: calc(100% - 32px);
+    }
+    
+}

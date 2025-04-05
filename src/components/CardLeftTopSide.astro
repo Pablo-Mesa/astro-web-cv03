@@ -1,0 +1,53 @@
+---
+import '../styles/cardLeftTopSide.css';
+import pablo_carnet from '../assets/imagenes/pablo_carnet.png';
+import btn_solver_marcador from '../assets/imagenes/btn_solver_marcador.png';
+import btn_solver_contacto from '../assets/imagenes/btn_solver_contacto.png';
+import btn_solver_email_3 from '../assets/imagenes/btn_solver_email_3.png';
+import btn_solver_lengua_extranjera from '../assets/imagenes/btn_solver_lengua_extranjera.png';
+import btn_solver_github from '../assets/imagenes/btn_solver_github.png';
+import { basics, languages } from '../json resume/json resume.json';
+
+const { name_short, label, phone, email, location } = basics;
+const { city } = location;
+const language = languages[0]?.language;
+---
+
+<aside class="card-left-top">
+    <header class="card-header">
+        <img src={pablo_carnet.src} alt="Foto de perfil" class="profile-picture">
+        <div class="profile-info">
+            <h4 class="profile-name">{name_short}</h4>
+            <h6 class="profile-tagline">{label}</h6>
+        </div>
+    </header>
+    
+    <hr class="divider">
+    
+    <section class="card-body">
+        <div class="info-item">
+            <img src={btn_solver_marcador.src} alt="Marcador" class="info-icon">
+            <p class="info-text">{city}</p>
+        </div>
+        <div class="info-item">
+            <img src={btn_solver_contacto.src} alt="Teléfono" class="info-icon">
+            <p class="info-text">{phone}</p>
+        </div>
+        <div class="info-item">
+            <img src={btn_solver_email_3.src} alt="Email" class="info-icon">
+            <p class="info-text">{email}</p>
+        </div>
+        <div class="info-item">
+            <img src={btn_solver_lengua_extranjera.src} alt="Lengua" class="info-icon">
+            <p class="info-text">{language}</p>
+        </div>
+    </section>
+    
+    <hr class="divider">
+    
+    <footer class="card-footer">
+        <div class="info-item">
+            <img src={btn_solver_github.src} alt="GitHub" class="info-icon">
+        </div>
+    </footer>
+</aside>

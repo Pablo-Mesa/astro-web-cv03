@@ -1,0 +1,28 @@
+.prose {
+    width: auto;
+    margin: auto;
+    padding: 16px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    height: 100;
+  }
+  
+  .prose h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .prose p {
+    line-height: 1.2;
+    margin-bottom: 1em;
+  }  
+
+ @media (max-width: 768px) {
+
+  .prose{
+    width: 100%;
+    width: calc(100% - 32px);
+  }
+    
+}

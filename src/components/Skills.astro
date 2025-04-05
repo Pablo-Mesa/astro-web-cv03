@@ -1,0 +1,14 @@
+---
+import '../styles/skills.css';
+import { skills } from '../json resume/json resume.json';
+
+const { name, level, keywords } = skills[0];
+const skillsList = keywords.map((skill) => `<li>${skill}</li>`).join('');
+---
+
+<article class="prose">
+    <h2>HABILIDADES</h2>
+    <p>{name}</p>
+    <p>{level}</p>  
+    <p>Habilidades: {keywords.join(', ')}</p>
+</article>

@@ -1,0 +1,113 @@
+{
+    "basics": {
+      "name": "Pablo Ceferino Mesa Olivera",
+      "name_short": "Pablo Mesa",
+      "label": "Programación: un deporte de riesgo para los amateurs",
+      "image": "",
+      "email": "pablomesa1985@gmail.com",
+      "phone": "(+595) 971 279 263",
+      "url": "",
+      "summary": "A summary of John Doe…",
+      "location": {
+        "address": "Limpio",
+        "postalCode": "110805",
+        "city": "Limpio",
+        "countryCode": "Py",
+        "region": "Central"
+      },
+      "profiles": [{
+        "network": "Twitter",
+        "username": "john",
+        "url": "https://twitter.com/john"
+      }]
+    },
+    "work": [{
+      "name": "Company",
+      "position": "President",
+      "url": "https://company.com",
+      "startDate": "2013-01-01",
+      "endDate": "2014-01-01",
+      "summary": "Description…",
+      "highlights": [
+        "Started the company"
+      ]
+    }],
+    "volunteer": [{
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": [
+        "Awarded 'Volunteer of the Month'"
+      ]
+    }],
+    "education": [{
+      "institution": "UTIC",
+      "url": "https://www.utic.edu.py/",
+      "area": "Analisis de Sistemas",
+      "studyType": "Univerisdad",
+      "startDate": "01/01/2010",
+      "endDate": "01/01/2012",
+      "score": "3.0",
+      "courses": [
+        "Programación con Visual Basic"
+      ]
+    }],
+    "awards": [{
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }],
+    "certificates": [{
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }],
+    "publications": [{
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }],
+    "skills": [{
+      "name": "Programacion",
+      "level": "Amateur",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Java",
+        "Php"
+      ]
+    }],
+    "languages": [{
+      "language": "Español",
+      "fluency": "Lengua nativa"
+    }],
+    "interests": [{
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }],
+    "references": [{
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }],
+    "projects": [{
+      "name": "Project",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "url": "https://project.com/"
+    }]
+  }
