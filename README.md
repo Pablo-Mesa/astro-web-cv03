@@ -58,10 +58,6 @@ astro-web-cv03/
 
 Si deseas contribuir, por favor abre un issue o envía un pull request.
 
-## Licencia
-
-Este proyecto está bajo la licencia MIT.
-
 ## DEV
 
 Este archivo readme fue generado directamente con copilot
