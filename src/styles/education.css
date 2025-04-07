@@ -6,6 +6,7 @@
     font-size: 1rem; /* Tamaño base para dispositivos grandes */
     border: 1px solid #ccc;
     border-radius: 6px;
+    background-color: transparent;
 }
 
 .prose h2 {
