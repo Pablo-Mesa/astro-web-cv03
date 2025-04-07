@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;    
     font-family: 'Roboto', sans-serif;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background-color: transparent;/*#f9f9f9*/
+    border: none;/*1px solid #ddd*/
     border-radius: 8px;
     padding: 16px;
     max-width: 300px;    
