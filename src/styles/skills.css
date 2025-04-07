@@ -2,11 +2,12 @@
     width: auto;
     margin: auto;
     padding: 16px;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', 'Arial', sans-serif; /* Fuente más legible y moderna */
+    font-size: 1rem; /* Tamaño base para dispositivos grandes */
     border: 1px solid #ccc;
     border-radius: 6px;
-    height: 100;
     background-color: transparent;
+    height: 100%;
   }
   
   .prose h2 {
