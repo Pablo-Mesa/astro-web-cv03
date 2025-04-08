@@ -3,15 +3,11 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 0px;
     align-items: stretch; /* Asegura que los elementos hijos se estiren verticalmente */
     height: 100%; /* Asegura que el contenedor ocupe toda la altura disponible */
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total del elemento */
 }
 
-.crts_body > * {
-    flex: 1; /* Permite que los elementos hijos crezcan uniformemente */
-    display: flex;
-    flex-direction: column; /* Asegura que el contenido interno se alinee correctamente */
-    min-height: 100%; /* Asegura que los elementos hijos ocupen toda la altura disponible */
-    height: 100%; /* Asegura que los elementos hijos ocupen toda la altura disponible */
-}

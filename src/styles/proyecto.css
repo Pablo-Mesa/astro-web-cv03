@@ -1,0 +1,72 @@
+/* Minimalist styles for the "proyecto" component */
+.proyecto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff; /* White background for a clean look */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 16px; /* Padding inside the card */
+    max-width: 300px; /* Limit the width for a card-like appearance */
+    margin: 16px auto; /* Center the card and add spacing */
+    font-family: 'Arial', sans-serif; /* Clean font */
+    text-align: center; /* Center-align text */
+}
+
+.proyecto__titulo {
+    font-size: 1.5rem; /* Slightly larger title */
+    font-weight: bold;
+    color: #333333; /* Dark gray for text */
+    margin-bottom: 8px;
+}
+
+.proyecto__descripcion {
+    font-size: 1rem;
+    color: #666666; /* Medium gray for description */
+    margin-bottom: 16px;
+}
+
+.proyecto__enlace {
+    font-size: 0.9rem;
+    color: #007acc; /* Blue for links */
+    text-decoration: none; /* Remove underline */
+    margin-bottom: 16px;
+}
+
+.proyecto__enlace:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.proyecto__imagen {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    border-radius: 4px; /* Slightly rounded corners for the image */
+    margin-bottom: 16px;
+}
+
+.proyecto__tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.proyecto__tecnologias span {
+    background-color: #f0f0f0; /* Light gray background for tags */
+    color: #333333; /* Dark gray text */
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+
+    .proyecto{
+        max-width: none;
+        width: calc(100% - 32px);
+        background-color: transparent;
+    }
+    
+}

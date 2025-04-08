@@ -1,0 +1,12 @@
+---
+import '../styles/proyecto.css';
+const {titulo, descripcion, imagen, alternative } = Astro.props
+---
+
+<div class="proyecto">
+    <h2 class="proyecto__titulo">{titulo}</h2>
+    <p class="proyecto__descripcion">{descripcion}</p>
+    <img src={imagen} alt={alternative} class="proyecto__imagen" />
+    <div class="proyecto__tecnologias">
+    </div>        
+</div>
