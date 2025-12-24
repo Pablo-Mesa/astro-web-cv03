@@ -28,7 +28,7 @@
     .prose {
         background-color: transparent;
         max-width: 100%;
-        width: calc(100%);
+        width: calc(100% - 32px); /* Full width minus padding */
         font-size: 0.9rem; /* Ajusta el tamaño de fuente para dispositivos móviles */
     }
 }
