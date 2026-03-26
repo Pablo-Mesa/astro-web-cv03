@@ -1,14 +1,79 @@
 ---
-import '../styles/generales.css';
-import { skills } from '../json resume/json resume.json';
+interface Props {
+	skills: Array<{
+		name: string;
+		level: string;
+		keywords: string[];
+	}>;
+}
 
-const { name, level, keywords } = skills[0];
-const skillsList = keywords.map((skill) => `<li>${skill}</li>`).join('');
+const { skills } = Astro.props;
 ---
 
-<article class="prose">
-    <h2>HABILIDADES</h2>
-    <p>{name}</p>
-    <p>{level}</p>  
-    <p>Habilidades: {keywords.join(', ')}</p>
-</article>
+<section class="skills-section">
+	<h2 class="title">Habilidades</h2>
+	<div class="groups-container">
+		{skills.map((group) => (
+			<div class="skill-group">
+				<h3 class="group-name">{group.name}</h3>
+				<div class="tags-container">
+					{group.keywords.map((skill) => (
+						<span class="skill-tag">
+							{skill}
+						</span>
+					))}
+				</div>
+			</div>
+		))}
+	</div>
+</section>
+
+<style>
+	.skills-section {
+		margin: 2rem 0;
+		width: 100%;
+	}
+
+	.title {
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin-bottom: 1.5rem;
+		color: #1a202c;
+		border-bottom: 2px solid #e2e8f0;
+		padding-bottom: 0.5rem;
+	}
+
+	.group-name {
+		font-size: 0.85rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		color: #718096;
+		margin-bottom: 0.75rem;
+	}
+
+	.tags-container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+	}
+
+	.skill-tag {
+		background-color: #ffffff;
+		border: 1px solid #e2e8f0;
+		color: #4a5568;
+		padding: 0.4rem 1rem;
+		border-radius: 8px;
+		font-size: 0.9rem;
+		font-weight: 500;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+		transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+		cursor: default;
+	}
+
+	.skill-tag:hover {
+		border-color: #333;
+		color: #1a202c;
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	}
+</style>

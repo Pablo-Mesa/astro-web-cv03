@@ -1,8 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Contenedor from '../components/Contenedor.astro';
+import Skills from '../components/Skills.astro';
+import resume from '../json resume/json resume.json';
+
+const { skills } = resume;
 ---
 
 <Layout>
-	<Contenedor />	
+	<Contenedor />
+	<Skills skills={skills} />
 </Layout>
